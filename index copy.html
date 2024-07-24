@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test.rosmebel(Brandmaker)</title>
+  <link rel="icon" href="image/favicon.png" type="image/x-icon">
+  <link href="css/setka.css" rel="stylesheet" />
+  <link href="css/reset.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <div class="menu row">
+      <div class="list col-6">
+        <ol>
+          <li><a href="#">Just ride</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Specifications</a></li>
+          <li><a href="#">Faq</a></li>
+        </ol>
+      </div>
+
+      <div class="logo col-2"><img src="image/logo.png" alt="logo" /></div>
+
+      <div class="country__Time col-4">
+        <p class="text decktop">New York, NY</p>
+        <p class="text decktop">3:48 AM</p>
+        <img class="ico" src="image/basket.png" />
+        <img class="ico mobal" src="image/menu.svg" alt="menu" onclick="openSideBar();" />
+      </div>
+    </div>
+
+
+    <div class="onedicplay">
+      <div class="blok__img">
+        <img class="image_front" src="./image/fon.png" alt="fon" />
+      </div>
+
+      <div class="block__txt">
+        <h1 class="title">VANMOOF X4</h1>
+
+        <p class="text__onedicplay">
+          Rule the road with the VanMoof x4. Perfect for controlled
+          cruising and longer rides.
+        </p>
+
+        <button type="submit" class="button" onclick="modalOpen();">
+          <p>Order now</p>
+        </button>
+      </div>
+    </div>
+
+
+  <div class="modal" id="modal">
+    <div class="modal__window">
+      <div class="modal__close" onclick="modalClose();">+</div>
+      <div>
+        <h1 class="modal__title">Join the waitlist</h1>
+        <p class="modal__txt">Join the waitlist and get priority access & insider benefits.</p>
+      </div>
+
+      <div>
+        <div class="modal__label"><label>Email</label></div>
+        <input input="email" class="modal__input" placeholder="Email"> </input>
+      </div>
+      <div>
+        <input class="modal__checkbox" type="checkbox"><label class="modal__check">I agree to privacy
+          policy.</label></input>
+      </div>
+
+
+      <div>
+        <button type="submit" class="modal_button" onclick="modalOpen">
+          <p class="modal__textButton">Send me updates</p>
+        </button>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="sideBar mobal" id="sideBar">
+
+    <div class="sideBar__logo">
+      <img src="./image/logo.png" alt="logo">
+      <div class="sideBar__close" onclick="sideBarCloce();">+</div>
+    </div>
+
+    <div class="sideBar__menu">
+      <ol class="sideBar__ol">
+        <li style="margin-bottom: 20px;"><a class="sideBar__li" href="#">Just ride</a></li>
+        <li style="margin-bottom: 20px;"><a class="sideBar__li" href="#">About</a></li>
+        <li style="margin-bottom: 20px;"><a class="sideBar__li" href="#">Features</a></li>
+        <li style="margin-bottom: 20px;"><a class="sideBar__li" href="#">Specifications</a></li>
+        <li style="margin-bottom: 20px;"><a class="sideBar__li" href="#">Faq</a></li>
+      </ol>
+    </div>
+
+    <button type="submit" class="sideBar_button" onclick="modalOpen();">
+      <p class="sideBar__textButton">Order now</p>
+    </button>
+
+
+  </div>
+
+  <script src="JS/openForm.js"></script>
+  <script src="JS/sideBar.js"></script>
+</body>
+
+</html>

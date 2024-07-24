@@ -1,0 +1,30 @@
+@media (max-width: 993px) {
+  .time__blok {
+    justify-content: flex-start;
+    padding-top: 20px;
+  }
+  .header__blok p {
+    width: 100%;
+  }
+  .header__blok {
+    background-position: inherit;
+  }
+  .logo {
+    padding: 20px 10px;
+  }
+}
+@media (max-width: 600px) {
+  .header__blok {
+    background-image: none;
+    height: auto;
+  }
+  .mobil__banner {
+    display: block;
+  }
+  .list {
+    display: none;
+  }
+  .time__blok {
+    display: none;
+  }
+}
