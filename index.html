@@ -17,7 +17,7 @@
 <body>
 
   <section class="container">
-    <div class="menu row">
+    <div class="menu row mobile__menu">
       <ul class="list col-lg-6">
         <li>Just ride</li>
         <li>About</li>
@@ -26,6 +26,10 @@
         <li>Faq</li>
       </ul>
       <div class="logo col-lg-3"><img src="image/logo.png" alt="logo company VANMOOF"></div>
+      <div class="burger__menu time__blok">
+        <img src="/image/basket.svg" alt="cart menu">
+        <img src="/image/burgerMenu.svg" alt="burger menu">
+      </div>
       <div class="time__blok col-lg-3">
         <p>New York, NY</p>
         <p>3:48 AM</p>
@@ -38,20 +42,38 @@
     <div class="header__blok">
       <div class="container">
         <h1>VANMOOF X4</h1>
-        <div>
+        <div class="button__blok">
           <p>Rule the road with the VanMoof x4. Perfect for controlled
             cruising and longer rides.</p>
-          <button>Order now</button>
+          <button id="openModalBtn" type="button" onclick="modalOpen();">Order now</button>
         </div>
       </div>
     </div>
   </section>
 
   <section class="mobil__banner">
-    <div>
+    <div class="blok__image">
       <img src="image/fon.png" alt="fon company VANMOOF">
   </section>
   </div>
+
+
+  <section id="modal" class="modal">
+    <div class="modal__content">
+      <span class="close" onclick="modalClose();">&times;</span>
+      <h5>Join the waitlist</h5>
+      <p>Join the waitlist and get priority access & insider benefits.</p>
+      <label for="email">Email
+        <input type="email" name="email" placeholder="Email">
+      </label>
+      <input type="checkbox" name="checkbox" id="checkbox" value="I agree to privacy policy.">
+      <div>
+        <button type="button" onclick="modalClose();">Send me updates</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="/JS/openForm.js"></script>
 </body>
 
 </html>
