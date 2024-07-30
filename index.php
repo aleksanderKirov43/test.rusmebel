@@ -1,42 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test.rosmebel(Brandmaker)</title>
-  <link rel="icon" href="image/favicon.png" type="image/x-icon">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/media.main.css">
-</head>
-
-<body>
-
-  <section class="container">
-    <div class="menu row mobile__menu">
-      <ul class="list col-lg-6">
-        <li>Just ride</li>
-        <li>About</li>
-        <li>Features</li>
-        <li>Specifications</li>
-        <li>Faq</li>
-      </ul>
-      <div class="logo col-lg-3"><img src="image/logo.png" alt="logo company VANMOOF"></div>
-      <div class="burger__menu time__blok">
-        <img src="/image/basket.svg" alt="cart menu">
-        <img src="/image/burgerMenu.svg" alt="burger menu">
-      </div>
-      <div class="time__blok col-lg-3">
-        <p>New York, NY</p>
-        <p>3:48 AM</p>
-        <img src="image/basket.png" alt="backet company VANMOOF">
-      </div>
-    </div>
-  </section>
+<?php include 'header.php'; ?>
 
   <section class="header">
     <div class="header__blok">
@@ -80,6 +42,7 @@
 
   <script src="/JS/openForm.js"></script>
   <script src="/JS/mail.js"></script>
+  <script src="/JS/burger.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-        var forms = document.querySelectorAll("#form1, #form2, #form3");
+        var forms = document.querySelectorAll("#form1");
       
         forms.forEach(function (form) {
           form.addEventListener("submit", function (event) {
@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
             xhr.open("POST", url, true);
             xhr.onreadystatechange = function () {
               if (xhr.readyState === 4) {
+                console.log("Server response status:", xhr.status);
                 if (xhr.status === 200) {
                   var response = xhr.responseText.trim();
                   if (response === "success") {
@@ -17,7 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
                       "Спасибо! Ваш запрос был успешно отправлен. Скоро мы с Вами свяжемся!"
                     );
                     form.reset();
-                    
+                    modalClose();
+
                   } else {
                     alert("При отправке запроса произошла ошибка: " + response);
                   }

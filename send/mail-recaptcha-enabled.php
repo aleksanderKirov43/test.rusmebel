@@ -3,13 +3,9 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Проверяем, была ли форма отправлена методом POST
 
-    $name = $_POST['name'];
-    $phone = $_POST['phone'];
+  
     $email = $_POST['email'];
 
-
-    $name = html_entity_decode(trim(htmlspecialchars(urldecode($name))));
-    $phone = html_entity_decode(trim(htmlspecialchars(urldecode($phone))));
     $email = html_entity_decode(trim(htmlspecialchars(urldecode($email))));
 
 
@@ -29,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = "Заявка на обратную связь №" . $count;
     $headers = "From: <$senderEmail>\r\n"; // Установка отправителя в заголовке письма
     $headers .= "Reply-To: $senderEmail\r\n";
-    $messageBody = "Имя: $name\r\nТелефон: $phone\r\n";
+    $messageBody = "Email потенциального клиента: $email\r\n";
 
     if (mail($recipientEmail, $subject, $messageBody, $headers)) {
         echo "success";

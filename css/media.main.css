@@ -37,7 +37,7 @@
   .time__blok {
     display: none;
   }
-  .time__blok img{
+  .time__blok img {
     width: 2.5em;
     height: 1.8em;
   }
@@ -63,9 +63,8 @@
   .mobile__menu .logo {
     max-width: 50%;
   }
-  .burger__menu{
+  .burger__menu {
     max-width: 50%;
     text-align: end;
   }
-
 }
